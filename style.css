@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    height: 100vh;
+}
+body {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "left-section right-section";
+}
+.section1{
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    grid-area: left-section;
+    color: white;
+    position: relative;
+}
+.logo {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    margin-top: 30%;
+}
+.logo > img {
+    height: 125px;
+}
+.logo > h1 {
+    font-size: 3.5rem;
+}
+.section1 > p {
+    font-size: .5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.section1 a {
+    color: white;
+}
+.section2{
+    background-color: rgb(243, 243, 243);
+    grid-area: right-section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top {
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+.top>p:nth-child(1){
+    font-size: .7rem;
+    margin-bottom: 25px;
+    width: 80%;
+}
+.top>p:nth-child(2) {
+    font-size: .7rem;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+.bottom>p {
+    padding: 0 30px;
+    font-size: .65rem;
+}
+.bottom>button {
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-size: .65rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    width: 25%;
+    margin: 0 30px;
+    box-shadow: 3px 8px 8px -4px grey;
+}
+form {
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+    box-shadow: 3px 8px 8px -4px grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+label{
+    font-size: .5rem;
+    letter-spacing: 1px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+}
+input {
+    height: 20px;
+    width: 70%;
+    border-radius: 5px;
+    border: #E5E7EB 2px solid;
+    padding: 5px;
+}
+input:focus {
+    outline: blue 1px solid;
+    box-shadow: 3px 8px 8px -4px grey;
+}
+input[type="password"] {
+    outline: red 1px solid;
+}
+form>p {
+    padding-bottom: 25px;
+    width: 100%;
+}
+legend {
+    padding-bottom: 25px;
+    font-size: .7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
